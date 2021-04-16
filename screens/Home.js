@@ -9,7 +9,7 @@ import {
     FlatList
 } from 'react-native';
 
-import { COLORS, FONTS, SIZES, icons, images } from '../constants';
+import { COLORS, SIZES, icons, images } from '../constants';
 
 const LineDivider = () => {
     return (
@@ -22,76 +22,76 @@ const LineDivider = () => {
 const Home = ({ navigation }) => {
 
     const profileData = {
-        name: 'Username',
-        point: 200
+        name: 'Đỗ Cao Thắng',
+        studentCode: 'PH09752'
     }
 
-    const bookOtherWordsForHome = {
+    const dacNhanTam = {
         id: 1,
         bookName: "Đắc Nhân Tâm",
         bookCover: images.dacNhanTam,
         rating: 4.5,
-        language: "Vie",
-        pageNo: 341,
+        language: "Tiếng Việt",
+        pageNo: 322,
         author: "Dale Carnegie",
         genre: [
-            "Romance", "Adventure", "Drama"
+            "KyNangSong", "TamLy"
         ],
-        readed: "12k",
-        description: "Jude never thought she’d be leaving her beloved older brother and father behind, all the way across the ocean in Syria. But when things in her hometown start becoming volatile, Jude and her mother are sent to live in Cincinnati with relatives. At first, everything in America seems too fast and too loud. The American movies that Jude has always loved haven’t quite prepared her for starting school in the US—and her new label of 'Middle Eastern,' an identity she’s never known before. But this life also brings unexpected surprises—there are new friends, a whole new family, and a school musical that Jude might just try out for. Maybe America, too, is a place where Jude can be seen as she really is.",
+        readed: "3896k",
+        description: "Đắc nhân tâm – How to win friends and Influence People của Dale Carnegie là quyển sách nổi tiếng nhất, bán chạy nhất và có tầm ảnh hưởng nhất của mọi thời đại. Tác phẩm đã được chuyển ngữ sang hầu hết các thứ tiếng trên thế giới và có mặt ở hàng trăm quốc gia. Đây là quyển sách duy nhất về thể loại self-help liên tục đứng đầu danh mục sách bán chạy nhất (best-selling Books) do báo The New York Times bình chọn suốt 10 năm liền. Riêng bản tiếng Anh của sách đã bán được hơn 15 triệu bản trên thế giới. Tác phẩm có sức lan toả vô cùng rộng lớn – dù bạn đi đến bất cứ nơi đâu, bất kỳ quốc gia nào cũng đều có thể nhìn thấy. Tác phẩm được đánh giá là quyển sách đầu tiên và hay nhất, có ảnh hưởng làm thay đổi cuộc đời của hàng triệu người trên thế giới.",
         backgroundColor: "rgba(240,240,232,0.9)",
         navTintColor: "#000"
     }
 
-    const bookTheMetropolis = {
+    const ToiThayHoaVangTrenCoXanh = {
         id: 2,
-        bookName: "The Metropolis",
-        bookCover: images.theMetropolist,
+        bookName: "Tôi Thấy Hoa Vàng Trên Cỏ Xanh",
+        bookCover: images.ToiThayHoaVangTrenCoXanh,
         rating: 4.1,
-        language: "Eng",
-        pageNo: 272,
-        author: "Seith Fried",
+        language: "Tiếng Việt",
+        pageNo: 378,
+        author: "Nguyễn Nhật Ánh",
         genre: [
-            "Adventure", "Drama"
+            "KyNangSong", "TamLy", "TinhCam"
         ],
-        readed: "13k",
-        description: "In Metropolis, the gleaming city of tomorrow, the dream of the great American city has been achieved. But all that is about to change, unless a neurotic, rule-following bureaucrat and an irreverent, freewheeling artificial intelligence can save the city from a mysterious terrorist plot that threatens its very existence. Henry Thompson has dedicated his life to improving America's infrastructure as a proud employee of the United States Municipal Survey. So when the agency comes under attack, he dutifully accepts his unexpected mission to visit Metropolis looking for answers. But his plans to investigate quietly, quickly, and carefully are interrupted by his new partner: a day-drinking know-it-all named OWEN, who also turns out to be the projected embodiment of the agency's supercomputer. Soon, Henry and OWEN are fighting to save not only their own lives and those of the city's millions of inhabitants, but also the soul of Metropolis. The Municipalists is a thrilling, funny, and touching adventure story, a tour-de-force of imagination that trenchantly explores our relationships to the cities around us and the technologies guiding us into the future.",
+        readed: "1331k",
+        description: "Tôi thấy hoa vàng trên cỏ xanh là một tiểu thuyết dành cho thanh thiếu niên của nhà văn Nguyễn Nhật Ánh, xuất bản lần đầu tại Việt Nam vào ngày 9 tháng 12 năm 2010 bởi Nhà xuất bản Trẻ, với phần tranh minh họa do Đỗ Hoàng Tường thực hiện. Đây là một trong các truyện dài của Nguyễn Nhật Ánh, ra đời sau Đảo mộng mơ và trước Lá nằm trong lá. Tác phẩm như một tập nhật ký xoay quanh cuộc sống của những đứa trẻ ở một vùng quê Việt Nam nghèo khó, nổi bật lên là thông điệp về tình anh em, tình làng nghĩa xóm và những tâm tư của tuổi mới lớn. Theo Nguyễn Nhật Ánh, đây là lần đầu tiên ông đưa vào truyện của mình những nhân vật phản diện, đặt ra vấn đề đạo đức như sự vô tâm hay cái ác.",
         backgroundColor: "rgba(247,239,219,0.9)",
         navTintColor: "#000"
     }
 
-    const bookTheTinyDragon = {
+    const KheoAnNoiCoThienHa = {
         id: 3,
-        bookName: "The Tiny Dragon",
-        bookCover: images.theTinyDragon,
-        rating: 3.5,
-        language: "Eng",
-        pageNo: 110,
-        author: "Ana C Bouvier",
+        bookName: "Khéo Ăn Nói Sẽ Có Được Thiên Hạ",
+        bookCover: images.KheoAnNoiCoThienHa,
+        rating: 4.5,
+        language: "Tiếng Việt",
+        pageNo: 322,
+        author: "Trác Nhã",
         genre: [
-            "Drama", "Adventure", "Romance"
+            "TamLy", "KyNangSong"
         ],
-        readed: "13k",
-        description: "This sketchbook for kids is the perfect tool to improve your drawing skills! Designed to encourage kids around the world to express their uniqueness through drawing, sketching or doodling, this sketch book is filled with 110 high quality blank pages for creations. Add some fun markers, crayons, and art supplies and you have the perfect, easy gift for kids!",
+        readed: "1582k",
+        description: "Xã hội hiện đại, từ xin việc đến thăng chức, từ tình yêu đến hôn nhân, từ giao lưu đến hợp tác… không việc gì không cần tài ăn nói. Khéo ăn nói giống như sở hữu loại “dầu bôi trơn” đảm bảo các mối quan hệ của bạn “vận hành” trơn tru. Không khéo ăn nói, gặp chuyện nhỏ mắc trở ngại, gặp chuyện lớn vấp thất bại. Làm thế nào để nói năng trôi chảy? Làm thế nào để nói lời “đi vào lòng người”? Trong những dịp khác nhau, với những người khác nhau, ở những tình huống không giống nhau… có cuốn sách này gợi ý, bạn sẽ thành người khéo ăn nói",
         backgroundColor: "rgba(119,77,143,0.9)",
         navTintColor: "#FFF"
     }
 
     const myBooksData = [
         {
-            ...bookOtherWordsForHome,
+            ...dacNhanTam,
             completion: "75%",
             lastRead: "3d 5h",
 
         },
         {
-            ...bookTheMetropolis,
+            ...ToiThayHoaVangTrenCoXanh,
             completion: "23%",
             lastRead: "10d 5h",
 
         },
         {
-            ...bookTheTinyDragon,
+            ...KheoAnNoiCoThienHa,
             completion: "10%",
             lastRead: "1d 2h",
 
@@ -103,21 +103,21 @@ const Home = ({ navigation }) => {
             id: 1,
             categoryName: "Best Seller",
             books: [
-                bookOtherWordsForHome, bookTheMetropolis, bookTheTinyDragon
+                dacNhanTam, ToiThayHoaVangTrenCoXanh, KheoAnNoiCoThienHa
             ]
         },
         {
             id: 2,
             categoryName: "The Latest",
             books: [
-                bookTheMetropolis
+                ToiThayHoaVangTrenCoXanh
             ]
         },
         {
             id: 3,
             categoryName: "Coming Soon",
             books: [
-                bookTheTinyDragon
+                KheoAnNoiCoThienHa
             ]
         },
     ]
@@ -129,16 +129,16 @@ const Home = ({ navigation }) => {
 
     function renderHeader(profile) {
         return (
-            <View style={{ flex: 1, flexDirection: 'row', paddingHorizontal: SIZES.padding, alignItems: 'center' }}>
+            <View style={{ flex: 1, flexDirection: 'row', paddingHorizontal: SIZES.padding, alignItems: 'center', marginTop: 32 }}>
                 {/* Greetings */}
                 <View style={{ flex: 1 }}>
                     <View style={{ marginRight: SIZES.padding }}>
-                        <Text style={{ ...FONTS.h3, color: COLORS.white }}>Good Morning</Text>
-                        <Text style={{ ...FONTS.h2, color: COLORS.white }}>{profile.name}</Text>
+                        <Text style={{ color: COLORS.white, fontSize: 20, fontWeight: 'bold' }}>{profile.name}</Text>
+                        <Text style={{ color: COLORS.white, fontSize: 16, fontStyle: 'italic' }}>{profile.studentCode}</Text>
                     </View>
                 </View>
 
-                {/* Points */}
+                {/* Search */}
                 <TouchableOpacity
                     style={{
                         backgroundColor: COLORS.primary,
@@ -147,12 +147,12 @@ const Home = ({ navigation }) => {
                         paddingRight: SIZES.radius,
                         borderRadius: 20
                     }}
-                    onPress={() => { console.log("Point") }}
+                    onPress={() => { console.log("Search") }}
                 >
                     <View style={{ flex: 1, flexDirection: 'row', justifyContent: 'center', alignItems: 'center' }}>
                         <View style={{ width: 30, height: 30, alignItems: 'center', justifyContent: 'center', borderRadius: 25, backgroundColor: 'rgba(0,0,0,0.5)' }}>
                             <Image
-                                source={icons.plus_icon}
+                                source={icons.search_icon}
                                 resizeMode="contain"
                                 style={{
                                     width: 20,
@@ -161,7 +161,7 @@ const Home = ({ navigation }) => {
                             />
                         </View>
 
-                        <Text style={{ marginLeft: SIZES.base, color: COLORS.white, ...FONTS.body3 }}>{profile.point} point</Text>
+                        <Text style={{ marginLeft: SIZES.base, color: COLORS.white }}>Search</Text>
                     </View>
                 </TouchableOpacity>
             </View>
@@ -186,7 +186,7 @@ const Home = ({ navigation }) => {
                                     height: 30
                                 }}
                             />
-                            <Text style={{ marginLeft: SIZES.base, ...FONTS.body3, color: COLORS.white }}>Claim</Text>
+                            <Text style={{ marginLeft: SIZES.base, color: COLORS.white }}>Claim</Text>
                         </View>
                     </TouchableOpacity>
 
@@ -214,7 +214,7 @@ const Home = ({ navigation }) => {
                                     height: 30
                                 }}
                             />
-                            <Text style={{ marginLeft: SIZES.base, ...FONTS.body3, color: COLORS.white }}>Get Point</Text>
+                            <Text style={{ marginLeft: SIZES.base, color: COLORS.white }}>Get Point</Text>
                         </View>
                     </TouchableOpacity>
 
@@ -242,7 +242,7 @@ const Home = ({ navigation }) => {
                                     height: 30
                                 }}
                             />
-                            <Text style={{ marginLeft: SIZES.base, ...FONTS.body3, color: COLORS.white }}>My Card</Text>
+                            <Text style={{ marginLeft: SIZES.base, color: COLORS.white }}>My Card</Text>
                         </View>
                     </TouchableOpacity>
                 </View>
@@ -285,7 +285,7 @@ const Home = ({ navigation }) => {
                                 tintColor: COLORS.lightGray
                             }}
                         />
-                        <Text style={{ marginLeft: 5, ...FONTS.body3, color: COLORS.lightGray }}>{item.lastRead}</Text>
+                        <Text style={{ marginLeft: 5, color: COLORS.lightGray }}>{item.lastRead}</Text>
 
                         <Image
                             source={icons.page_icon}
@@ -296,7 +296,7 @@ const Home = ({ navigation }) => {
                                 tintColor: COLORS.lightGray
                             }}
                         />
-                        <Text style={{ marginLeft: 5, ...FONTS.body3, color: COLORS.lightGray }}>{item.completion}</Text>
+                        <Text style={{ marginLeft: 5, color: COLORS.lightGray }}>{item.completion}</Text>
                     </View>
                 </TouchableOpacity>
             )
@@ -306,12 +306,12 @@ const Home = ({ navigation }) => {
             <View style={{ flex: 1 }}>
                 {/* Header */}
                 <View style={{ paddingHorizontal: SIZES.padding, flexDirection: 'row', justifyContent: 'space-between' }}>
-                    <Text style={{ ...FONTS.h2, color: COLORS.white }}>My Book</Text>
+                    <Text style={{ color: COLORS.white }}>My Book</Text>
 
                     <TouchableOpacity
                         onPress={() => console.log("See More")}
                     >
-                        <Text style={{ ...FONTS.body3, color: COLORS.lightGray, alignSelf: 'flex-start', textDecorationLine: 'underline' }}>see more</Text>
+                        <Text style={{ color: COLORS.lightGray, alignSelf: 'flex-start', textDecorationLine: 'underline' }}>see more</Text>
                     </TouchableOpacity>
                 </View>
 
@@ -339,11 +339,11 @@ const Home = ({ navigation }) => {
                 >
                     {
                         selectedCategory == item.id &&
-                        <Text style={{ ...FONTS.h2, color: COLORS.white }}>{item.categoryName}</Text>
+                        <Text style={{ color: COLORS.white }}>{item.categoryName}</Text>
                     }
                     {
                         selectedCategory != item.id &&
-                        <Text style={{ ...FONTS.h2, color: COLORS.lightGray }}>{item.categoryName}</Text>
+                        <Text style={{ color: COLORS.lightGray }}>{item.categoryName}</Text>
                     }
                 </TouchableOpacity>
             )
@@ -390,8 +390,8 @@ const Home = ({ navigation }) => {
                         <View style={{ flex: 1, marginLeft: SIZES.radius }}>
                             {/* Book name and author */}
                             <View>
-                                <Text style={{ paddingRight: SIZES.padding, ...FONTS.h2, color: COLORS.white }}>{item.bookName}</Text>
-                                <Text style={{ ...FONTS.h3, color: COLORS.lightGray }}>{item.author}</Text>
+                                <Text style={{ paddingRight: SIZES.padding, color: COLORS.white }}>{item.bookName}</Text>
+                                <Text style={{ color: COLORS.lightGray }}>{item.author}</Text>
                             </View>
 
                             {/* Book Info */}
@@ -405,7 +405,7 @@ const Home = ({ navigation }) => {
                                         tintColor: COLORS.lightGray
                                     }}
                                 />
-                                <Text style={{ ...FONTS.body4, color: COLORS.lightGray, paddingHorizontal: SIZES.radius }}>{item.pageNo}</Text>
+                                <Text style={{ color: COLORS.lightGray, paddingHorizontal: SIZES.radius }}>{item.pageNo}</Text>
 
                                 <Image
                                     source={icons.read_icon}
@@ -416,27 +416,27 @@ const Home = ({ navigation }) => {
                                         tintColor: COLORS.lightGray
                                     }}
                                 />
-                                <Text style={{ ...FONTS.body4, color: COLORS.lightGray, paddingHorizontal: SIZES.radius }}>{item.readed}</Text>
+                                <Text style={{ color: COLORS.lightGray, paddingHorizontal: SIZES.radius }}>{item.readed}</Text>
                             </View>
 
                             {/* Genre */}
                             <View style={{ flexDirection: 'row', marginTop: SIZES.base }}>
                                 {
-                                    item.genre.includes("Adventure") &&
+                                    item.genre.includes("KyNangSong") &&
                                     <View style={{ justifyContent: 'center', alignItems: 'center', padding: SIZES.base, marginRight: SIZES.base, backgroundColor: COLORS.darkGreen, height: 40, borderRadius: SIZES.radius }}>
-                                        <Text style={{ ...FONTS.body3, color: COLORS.lightGreen }}>Adventure</Text>
+                                        <Text style={{ color: COLORS.lightGreen }}>Kỹ Năng Sống</Text>
                                     </View>
                                 }
                                 {
-                                    item.genre.includes("Romance") &&
+                                    item.genre.includes("TinhCam") &&
                                     <View style={{ justifyContent: 'center', alignItems: 'center', padding: SIZES.base, marginRight: SIZES.base, backgroundColor: COLORS.darkRed, height: 40, borderRadius: SIZES.radius }}>
-                                        <Text style={{ ...FONTS.body3, color: COLORS.lightRed }}>Romance</Text>
+                                        <Text style={{ color: COLORS.lightRed }}>Tình Cảm</Text>
                                     </View>
                                 }
                                 {
-                                    item.genre.includes("Drama") &&
+                                    item.genre.includes("TamLy") &&
                                     <View style={{ justifyContent: 'center', alignItems: 'center', padding: SIZES.base, marginRight: SIZES.base, backgroundColor: COLORS.darkBlue, height: 40, borderRadius: SIZES.radius }}>
-                                        <Text style={{ ...FONTS.body3, color: COLORS.lightBlue }}>Drama</Text>
+                                        <Text style={{ color: COLORS.lightBlue }}>Tâm Lý</Text>
                                     </View>
                                 }
                             </View>

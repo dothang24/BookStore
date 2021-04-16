@@ -8,7 +8,7 @@ import {
     ScrollView,
     Animated
 } from 'react-native';
-import { FONTS, COLORS, SIZES, icons } from "../constants";
+import { COLORS, SIZES, icons } from "../constants";
 
 const LineDivider = () => {
     return (
@@ -61,7 +61,7 @@ const BookDetail = ({ route, navigation }) => {
                 </View>
 
                 {/* Navigation header */}
-                <View style={{ flexDirection: 'row', paddingHorizontal: SIZES.radius, height: 80, alignItems: 'flex-end' }}>
+                <View style={{ flexDirection: 'row', paddingHorizontal: SIZES.radius, height:60, alignItems: 'flex-end' }}>
                     <TouchableOpacity
                         style={{ marginLeft: SIZES.base }}
                         onPress={() => navigation.goBack()}
@@ -78,7 +78,7 @@ const BookDetail = ({ route, navigation }) => {
                     </TouchableOpacity>
 
                     <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-                        <Text style={{ ...FONTS.h3, color: book.navTintColor }}>Book Detail</Text>
+                        <Text style={{ color: book.navTintColor }}>Book Detail</Text>
                     </View>
 
                     <TouchableOpacity
@@ -113,8 +113,8 @@ const BookDetail = ({ route, navigation }) => {
 
                 {/* Book Name and Author */}
                 <View style={{ flex: 1.8, alignItems: 'center', justifyContent: 'center' }}>
-                    <Text style={{ ...FONTS.h2, color: book.navTintColor }}>{book.bookName}</Text>
-                    <Text style={{ ...FONTS.body3, color: book.navTintColor }}>{book.author}</Text>
+                    <Text style={{ color: book.navTintColor }}>{book.bookName}</Text>
+                    <Text style={{ color: book.navTintColor }}>{book.author}</Text>
                 </View>
 
                 {/* Book Info */}
@@ -129,24 +129,24 @@ const BookDetail = ({ route, navigation }) => {
                 >
                     {/* Rating */}
                     <View style={{ flex: 1, alignItems: 'center' }}>
-                        <Text style={{ ...FONTS.h3, color: COLORS.white }}>{book.rating}</Text>
-                        <Text style={{ ...FONTS.body4, color: COLORS.white }}>Rating</Text>
+                        <Text style={{ color: COLORS.white }}>{book.rating}</Text>
+                        <Text style={{ color: COLORS.white }}>Rating</Text>
                     </View>
 
                     <LineDivider />
 
                     {/* Pages */}
                     <View style={{ flex: 1, paddingHorizontal: SIZES.radius, alignItems: 'center' }}>
-                        <Text style={{ ...FONTS.h3, color: COLORS.white }}>{book.pageNo}</Text>
-                        <Text style={{ ...FONTS.body4, color: COLORS.white }}>Number of Page</Text>
+                        <Text style={{ color: COLORS.white }}>{book.pageNo}</Text>
+                        <Text style={{ color: COLORS.white }}>Number of Page</Text>
                     </View>
 
                     <LineDivider />
 
                     {/* Language */}
                     <View style={{ flex: 1, alignItems: 'center' }}>
-                        <Text style={{ ...FONTS.h3, color: COLORS.white }}>{book.language}</Text>
-                        <Text style={{ ...FONTS.body4, color: COLORS.white }}>Language</Text>
+                        <Text style={{ color: COLORS.white }}>{book.language}</Text>
+                        <Text style={{ color: COLORS.white }}>Language</Text>
                     </View>
                 </View>
             </View>
@@ -195,8 +195,8 @@ const BookDetail = ({ route, navigation }) => {
                         { useNativeDriver: false }
                     )}
                 >
-                    <Text style={{ ...FONTS.h2, color: COLORS.white, marginBottom: SIZES.padding }}>Description</Text>
-                    <Text style={{ ...FONTS.body2, color: COLORS.lightGray }}>{book.description}</Text>
+                    <Text style={{ color: COLORS.white, marginBottom: SIZES.padding }}>Description</Text>
+                    <Text style={{ color: COLORS.lightGray }}>{book.description}</Text>
                 </ScrollView>
             </View>
         )
@@ -242,7 +242,7 @@ const BookDetail = ({ route, navigation }) => {
                     }}
                     onPress={() => console.log("Start Reading")}
                 >
-                    <Text style={{ ...FONTS.h3, color: COLORS.white }}>Start Reading</Text>
+                    <Text style={{ color: COLORS.white }}>Start Reading</Text>
                 </TouchableOpacity>
             </View>
         )

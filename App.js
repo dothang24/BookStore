@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { createStackNavigator } from "@react-navigation/stack";
 import { NavigationContainer, DefaultTheme } from '@react-navigation/native';
 
-import { BookDetail } from "./screens/";
+import { BookDetail, BookInfo, MyBooks } from "./screens/";
 import Tabs from "./navigation/tabs";
 
 const theme = {
@@ -29,6 +29,8 @@ const App = () => {
 
         {/* Screens */}
         <Stack.Screen name="BookDetail" component={BookDetail} options={{ headerShown: false }} />
+        <Stack.Screen name="MyBooks" component={MyBooks} options={{ headerShown: true }} />
+        <Stack.Screen name="BookInfo" component={BookInfo} options={{ headerShown: true }} />
       </Stack.Navigator>
     </NavigationContainer>
   )
